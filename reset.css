@@ -1,0 +1,36 @@
+*, *::before, *::after{
+box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    font-size: 0;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:focus, a:active {
+    outline: none;
+}
+input, button, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Karla:wght@400;700&display=swap');
+body {
+    font-family: Karla;
+    background-color: var(--initial-color);
+    opacity: 0.67;
+    font-weight: 400;
+    font-size: 14px;
+}
+:root {
+    --initial-color: hsl(218, 33%, 76%);
+    --primary-color: hsl(179, 62%, 43%);
+    --secondary-color: #9AA7BE;
+    --btn-color: hsl(71, 73%, 54%);
+}
+.wrapper {
+height: 100%;
+padding: 72px 0 62px 0px;
+}
+.layout {
+   padding: 0 2rem; 
+}
+.card {
+border-radius: 5px;
+overflow: hidden;
+}
+.section {
+    padding: 24px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.title {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+.main_section {
+    background-color: #fff;
+    padding: 28px 24px 32px 24px;
+}
+.main-section_title {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 24px;
+}
+.main-section_subtitle {
+    color: var(--btn-color);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.187px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.main-section_text {
+    color: var(--secondary-color);
+    line-height: 26px;
+    letter-spacing: -0.175px;
+}
+
+.price-section_title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+.price-section_items {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.item_value {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+.item_term {
+    font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.2px;
+opacity: 0.5;
+}
+.price-section_text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    margin-bottom: 26px;
+}
+[type="button"] {
+    display: flex;
+align-items: center;
+justify-content: center;
+height: 48px;
+padding: 0 10px;
+font-size: 16px;
+color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--btn-color);
+}
+.advantages-section {
+opacity: 0.75;
+}
+.advantages-section_text {
+
+}
+.advantages-section_text p {
+line-height: 20px;
+letter-spacing: -0.1715px;
+}
+@media (min-width: 1440px) {
+    .wrapper {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .layout {
+        padding: 0px;
+    }
+.card {
+    max-width: 635px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+  "main_section main_section"
+  "price_section advantages-section";
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+.section {
+    padding: 40px;
+}
+.title {
+    margin-bottom: 12px;
+}
+.main_section {
+    grid-area: main_section;
+    padding: 40px;
+}
+.main-section_title {
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+}
+.main-section_subtitle {
+    font-size: 18px;
+    letter-spacing: -0.225px;
+    margin-bottom: 12px;
+}
+.main-section_text {
+    font-size: 16px;
+}
+.price_section {
+    grid-area: price_section;
+}
+.price-section_title {
+    line-height: 1.1;
+}
+.price-section_text {
+margin-bottom: 26px;
+}
+.item_value {
+    line-height: 1.2;
+}
+.advantages-section {
+    grid-area: advantages-section;
+}
+}
